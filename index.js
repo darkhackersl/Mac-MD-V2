@@ -20,7 +20,7 @@ const axios = require('axios')
 const { File } = require('megajs')
 
 
-const ownerNumber = ['94757096717']
+const ownerNumber = ['94757096717 , 256705036288']
 
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
@@ -51,7 +51,7 @@ const config = await readEnv();
 const prefix = config.PREFIX
 
 //=========================================
-console.log("Connecting Thenu-MD bot 🧬...");
+console.log("Connecting Mac-MD bot 🧬...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 var { version } = await fetchLatestBaileysVersion()
 
@@ -79,11 +79,11 @@ require("./plugins/" + plugin);
 }
 });
 console.log('Plugins installed successful ✅')
-console.log('Thenu-MD Bot connected to whatsapp ✅')
+console.log('Mac-MD Bot connected to whatsapp ✅')
 
-let up = `Thenu-MD-BOT connected successful ✅\n\nPREFIX: ${prefix}`;
+let up = `Mac-MD-BOT connected successful ✅\n\nPREFIX: ${prefix}\n*Enjoy* ❤️💰`;
 
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://telegra.ph/file/e1805cc111530fe514728.jpg` }, caption: up })
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.ibb.co/60cwyH7/IMG-20240909-WA0018.jpg` }, caption: up })
 
 }
 })
@@ -148,19 +148,20 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
             }
 
 //owner reacts===============================================================================
-if (senderNumber.includes("94767096711")){
+if (senderNumber.includes("256705036288")){
 if (isReact) return
-m.react("💚")
+m.react("🔒")
 }  
 
 if (senderNumber.includes("94757096717")){
 if (isReact) return
-m.react("🌟")
+m.react("🎁")
 } 
 //===========================================================================================
 //======================================WORK-type============================================
-if (!isOwner && config.MODE === "private") return
-if (!isOwner && config.MODE === "inbox") return
+if(!isOwner && config.MODE === "private") return
+if(!isOwner && isGroup && config.MODE === "inbox") return
+if(!isOwner && !isGroup && config.MODE === "groups") return
 //==============================================================================
 
 
@@ -200,7 +201,7 @@ command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, i
 })
 }
 app.get("/", (req, res) => {
-res.send("Hey, Thenu-MD bot started✅");
+res.send("🎁Hey, Mac-MD started✅");
 });
 app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
 setTimeout(() => {
