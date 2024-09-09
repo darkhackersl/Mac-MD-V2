@@ -31,3 +31,27 @@
     
   <p align="left"><a href='https://pair-web-public.koyeb.app' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a></p>
 
+
+ ### Deploy On Replit
+
+ [![Run on Repl.it](https://repl.it/badge/github/PikaBotz/Anya_v2-MD)](https://replit.com/github/darkhackersl/Mac-MD-V2) </p>
+---
+
+## DEPLOY TO HEROKU
+
+<p aling="center">1. If You don't have an account in Heroku. Create a account.</p>
+    <br>
+<p align="center"><a href="https://signup.heroku.com"> <img src="https://img.shields.io/badge/heroku%20Account-blue?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+
+
+2.Now Deploy
+   <br>
+ <div align="center">
+  <a href="https://heroku.com/deploy?template=https://github.com/darkhackersl/Mac-MD-V2">
+    <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku">
+  </a>
+</div>
+____
+  <a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+
+
